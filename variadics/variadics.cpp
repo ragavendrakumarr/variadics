@@ -9,10 +9,9 @@ auto matches(T t, U u)-> int
 	return (t == u);
 }
 
-template <typename T, typename U, typename... Args>
-auto matches(T t, U u, Args... _args)-> int
+int foo()
 {
-	return (t == u) || matches(t, Args... _args);
+	return 0;
 }
 
 
